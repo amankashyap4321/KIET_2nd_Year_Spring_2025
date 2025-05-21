@@ -1,0 +1,14 @@
+package com.Kiet;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class DrawingConfig {
+	public Circle getCircle() {
+		return new Circle();
+	}
+
+	public Rectangle getRectangle() {
+		return new Rectangle();
+	}
+}

@@ -1,0 +1,13 @@
+package com.Kiet;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Aiml2CApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Aiml2CApplication.class, args);
+	}
+
+}

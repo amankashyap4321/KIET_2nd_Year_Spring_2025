@@ -1,0 +1,10 @@
+package com.Kiet;
+
+public class DrawingConfig {
+public Circle getCircle() {
+	return new Circle();
+}
+public Rectanlge getRectangle() {
+	return Rectangle(10,12);
+}
+}

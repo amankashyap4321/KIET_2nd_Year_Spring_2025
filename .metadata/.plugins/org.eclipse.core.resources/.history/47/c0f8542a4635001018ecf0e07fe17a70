@@ -1,0 +1,24 @@
+package p1;
+
+public class DrawingApp {
+	Shape s;
+
+	public DrawingApp(Circle c) {
+		super();
+		this.c = c;
+	}
+
+	public Circle getC() {
+		return c;
+	}
+
+	public void setC(Circle c) {
+		this.c = c;
+	}
+
+	void draw() {
+		System.out.println(c);
+	}
+	
+	
+}
