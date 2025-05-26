@@ -1,7 +1,5 @@
 package com.Kiet;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Aiml2BLecture01Application {

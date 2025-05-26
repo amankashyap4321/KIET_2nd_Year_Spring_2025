@@ -1,11 +1,11 @@
 eclipse.preferences.version=1
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=AI_02C_Lecture01
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=3.4.5
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=AI_2A_Lecture02
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=3.5.0
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Demo project for Spring Boot
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.kiet
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=17
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=AI_02C_Lecture01
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=AI_2A_Lecture02
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.kiet
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
