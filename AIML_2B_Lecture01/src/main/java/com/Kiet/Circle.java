@@ -1,5 +1,10 @@
 package com.Kiet;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("circle")
 public class Circle implements Shape {
 	private int radius;
 	//No Argument
