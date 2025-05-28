@@ -13,7 +13,7 @@ public class Ai2ALecture02Application {
 		//var context = new AnnotationConfigApplicationContext(DrawingConfig.class);
 		var context = new AnnotationConfigApplicationContext(Ai2ALecture02Application.class);
 
-		Circle c = context.getBean(Circle.class);
+	
 		DrawingApp d =  context.getBean(DrawingApp.class);
 		d.draw();
 

@@ -18,6 +18,14 @@ public class Aiml2CApplication {
 		var context = new AnnotationConfigApplicationContext(Aiml2CApplication.class);
 		DrawingApp d = (DrawingApp) context.getBean(DrawingApp.class);
 		d.draw();
+//		System.out.println(context.getBean(Rectangle.class).hashCode());
+//		System.out.println(context.getBean(Rectangle.class).hashCode());
+//		System.out.println(context.getBean(Rectangle.class).hashCode());
+//		System.out.println(context.getBean(Rectangle.class).hashCode());
+//		System.out.println(context.getBean(Circle.class).hashCode());
+//		System.out.println(context.getBean(Circle.class).hashCode());
+//		System.out.println(context.getBean(Circle.class).hashCode());
+//		System.out.println(context.getBean(Circle.class).hashCode());
 	}
 
 }

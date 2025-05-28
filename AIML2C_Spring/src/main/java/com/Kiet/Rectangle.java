@@ -1,19 +1,25 @@
 package com.Kiet;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component
+@Lazy
+@Qualifier("rectangle")
 public class Rectangle implements Shape {
 	private int length;
 	private int breath;
 	public Rectangle() {
 		super();
 		// TODO Auto-generated constructor stub
+		System.out.println("Rectangle Object Created");
 	}
 	public Rectangle(int length, int breath) {
 		super();
 		this.length = length;
 		this.breath = breath;
+		System.out.println("Rectangle Object Created");
 	}
 	public int getLength() {
 		return length;
