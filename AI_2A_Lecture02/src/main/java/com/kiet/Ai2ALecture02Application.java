@@ -15,6 +15,11 @@ public class Ai2ALecture02Application {
 
 	
 		DrawingApp d =  context.getBean(DrawingApp.class);
+		System.out.println(context.getBean(DrawingApp.class).hashCode());
+		System.out.println(context.getBean(DrawingApp.class).hashCode());
+		System.out.println(context.getBean(DrawingApp.class).hashCode());
+		System.out.println(context.getBean(DrawingApp.class).hashCode());
+		System.out.println(context.getBean(DrawingApp.class).hashCode());
 		d.draw();
 
 	}
