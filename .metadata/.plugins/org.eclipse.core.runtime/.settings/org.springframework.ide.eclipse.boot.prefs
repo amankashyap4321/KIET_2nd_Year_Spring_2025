@@ -1,12 +1,12 @@
 eclipse.preferences.version=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=1
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=AI2C_FirstRestAPI
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=2
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=AI_2B_FirstRestAPI
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=3.5.0
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=First Rest API
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=First Demo
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.kiet
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=17
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=AI2C_FirstRestAPI
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=AI_2B_FirstRestAPI
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.kiet
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
