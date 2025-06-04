@@ -15,11 +15,11 @@ public class StudentService {
 	public StudentService(StudentRepository repository) {
 		super();
 		this.repository = repository;
-		repository.save(new Student(101, "Rahul", "Java", "9015088066"));
-		repository.save(new Student(102, "Anmol", "Java", "9015088066"));
-		repository.save(new Student(103, "Aditya", "Java", "9015088066"));
-		repository.save(new Student(104, "Aryan", "Java", "9015088066"));
-		repository.save(new Student(105, "Bhavna", "Java", "9015088066"));
+//		repository.save(new Student(101, "Rahul", "Java", "9015088066"));
+//		repository.save(new Student(102, "Anmol", "Java", "9015088066"));
+//		repository.save(new Student(103, "Aditya", "Java", "9015088066"));
+//		repository.save(new Student(104, "Aryan", "Java", "9015088066"));
+//		repository.save(new Student(105, "Bhavna", "Java", "9015088066"));
 	}
 
 	public List<Student> reteriveAllStudents() {
