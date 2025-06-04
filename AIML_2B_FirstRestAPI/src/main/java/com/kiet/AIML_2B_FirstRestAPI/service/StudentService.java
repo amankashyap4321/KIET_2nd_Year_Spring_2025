@@ -25,5 +25,10 @@ public class StudentService {
 		// TODO Auto-generated method stub
 		return repository.findAll();
 	}
+
+	public Student retrieveStudentByid(int id) {
+		// TODO Auto-generated method stub
+		return repository.findById(id).get();
+	}
 	
 }
