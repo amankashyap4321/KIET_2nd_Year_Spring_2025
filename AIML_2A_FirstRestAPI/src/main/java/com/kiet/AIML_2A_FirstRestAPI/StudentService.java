@@ -27,4 +27,14 @@ public class StudentService {
 		return repository.findById(id).get();
 	}
 
+	public Student saveStudent(Student student) {
+		// TODO Auto-generated method stub
+		return repository.save(student);
+	}
+
+	public void removeById(int id) {
+		// TODO Auto-generated method stub
+		 repository.deleteById(id);
+	}
+
 }
