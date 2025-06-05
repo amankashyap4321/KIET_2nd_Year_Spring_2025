@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.kiet.model.Student;
 
-@RestController
+//@RestController
 public class FirstRestController {
 
 	@RequestMapping("/hello")

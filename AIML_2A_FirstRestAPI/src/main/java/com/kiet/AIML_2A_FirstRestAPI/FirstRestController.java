@@ -10,4 +10,9 @@ public class FirstRestController {
 	public String hello() {
 		return "Hello Rahul";
 	}
+	//http://localhost:8080/student
+	@RequestMapping("/student")
+	public Student getStudent() {
+		return new Student(101,"Rahul","Java","9015088066");
+	}
 }

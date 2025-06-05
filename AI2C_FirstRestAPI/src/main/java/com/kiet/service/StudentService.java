@@ -30,6 +30,16 @@ public class StudentService {
 		// TODO Auto-generated method stub
 		return repository.findById(id).get();
 	}
+
+	public Student addStudent(Student student) {
+		// TODO Auto-generated method stub
+		return repository.save(student);
+	}
+
+	public void removebyid(int id) {
+		// TODO Auto-generated method stub
+		 repository.deleteById(id);
+	}
 	
 
 }
