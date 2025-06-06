@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.thymeleaf.org">
+<html lang="en" xmlns="https://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<title>All Person Detail Page</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Student Information As Follows</h1>
-    <h2 th:text="${stud.name}">Name</h2>
-    <h2 th:text="${stud.course}">Course</h2>
-    <h2 th:text="${stud.contact}">Phone Number</h2>
+
+	<div class="container" align="center">
+		<a th:href="@{/addStudent}" class="btn btn-primary" btn-sm mb="3">Add Student</a>
+		<h1>All The Person Information As Follows</h1>
+		<table style="width: 80% ; border: 5px;" class="table table-stripped table-reposive-md">
+			<tr>
+
+				<th>Student Name</th>
+				<th>Student Contact</th>
+				<th>Student Course</th>
+				<th>Action</th>
+			</tr>
+			<tr th:each="student:${students}">
+
+				<td th:text="${student.name}">Name</td>
+				<td th:text="${student.contact}">Email</td>
+				<td th:text="${student.course}">Email</td>
+				<td>
+					<a th:href="@{/showFormUpdate/{id}(id=${student.id})}" class="btn btn-primary">Update</a>
+					<a th:href="@{/deleteStudent/{id}(id=${student.id})}" class="btn btn-danger">Delete</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
 </body>
+
 </html>

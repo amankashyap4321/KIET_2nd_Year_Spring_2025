@@ -15,10 +15,7 @@ public class StudentService {
 	public StudentService(StudentRepository repository) {
 		super();
 		this.repository = repository;
-		repository.save(new Student(101,"Rahul","Java","9015088066"));
-		repository.save(new Student(102,"Shreya","Java","9015088066"));
-		repository.save(new Student(103,"shiddhi","Java","9015088066"));
-		repository.save(new Student(104,"vibhuti","Java","9015088066"));
+	
 	}
 
 	public List<Student> retrieveAll() {
