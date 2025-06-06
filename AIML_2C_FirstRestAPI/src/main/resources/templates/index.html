@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Students List</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f3f3f3;
+        }
+        .action-btn {
+            margin-right: 5px;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+        .update-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .delete-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body class="container">
+
+    <h1>Student List</h1>
+	<a th:href="@{/students/add}">
+	       <button style="margin-bottom: 15px; padding: 10px 15px; background-color: #2196F3; color: white; border: none;">
+	           Add Student
+	       </button>
+	   </a>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Course</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="student : ${students}">
+                <td th:text="${student.id}">1</td>
+                <td th:text="${student.name}">Name</td>
+                <td th:text="${student.contact}">Contact</td>
+                <td th:text="${student.course}">Course</td>
+                <td>
+                    <a th:href="@{'/students/update/' + ${student.id}}">
+                        <button class="action-btn update-btn">Update</button>
+                    </a>
+                    <a th:href="@{'/students/delete/' + ${student.id}}">
+                        <button class="action-btn delete-btn">Delete</button>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

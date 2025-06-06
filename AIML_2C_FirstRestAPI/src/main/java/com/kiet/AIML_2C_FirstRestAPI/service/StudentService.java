@@ -26,4 +26,13 @@ public class StudentService {
 		return repository.findAll();
 	}
 
+	public Student saveStudent(Student student) {
+		// TODO Auto-generated method stub
+		return repository.save(student);
+	}
+
+	public void remove(int id) {
+		repository.deleteById(id);
+	}
+
 }

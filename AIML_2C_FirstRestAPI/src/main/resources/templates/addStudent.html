@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add New Student</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add New Student</h2>
+    
+    <form th:action="@{/students/add}" th:object="${student}" method="post">
+   
+        <input type="hidden" th:field="*{id}" id="id" required />
+
+        <label for="name">Name:</label>
+        <input type="text" th:field="*{name}" id="name" required />
+
+        <label for="contact">Contact:</label>
+        <input type="text" th:field="*{contact}" id="contact" required />
+
+        <label for="course">Course:</label>
+        <input type="text" th:field="*{course}" id="course" required />
+
+        <button type="submit">Save Student</button>
+    </form>
+
+    <a th:href="@{/students}">Back to Student List</a>
+</body>
+</html>
