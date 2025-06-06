@@ -30,6 +30,13 @@ public class StudentControllerMVC {
 			return "demo";
 	}
 	
+	//http://localhost:9090/students/add
+	@GetMapping("/students/add")
+	public String addStudent(Model model) {
+		model.addAttribute("student",new Student());
+		return "modelPage";
+	}
+	
 	
 	
 	

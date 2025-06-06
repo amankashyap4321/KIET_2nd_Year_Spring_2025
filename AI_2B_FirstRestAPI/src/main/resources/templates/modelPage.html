@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add / Edit Student</title>
+    <style>
+        form {
+            width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form th:action="@{/students/save}" th:object="${student}" method="post">
+        <h2 th:text="${#fields.hasErrors()} ? 'Edit Student' : 'Add Student'">Add Student </h2>
+
+
+        <input type="hidden" id="id" th:field="*{id}" 
+               placeholder="Auto-generated or uneditable for new students"/>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" th:field="*{name}" placeholder="Enter student name" required />
+
+        <label for="contact">Contact</label>
+        <input type="text" id="contact" th:field="*{contact}" placeholder="Enter contact number" required />
+
+        <label for="course">Course</label>
+        <input type="text" id="course" th:field="*{course}" placeholder="Enter course name" required />
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
