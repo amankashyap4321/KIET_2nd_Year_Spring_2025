@@ -39,10 +39,15 @@
 			<version>3.5.0</version>
 		</dependency>
 		<!--Depedency for H2 Database-->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
+		</dependency>-->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.7.1</version> <!-- Use latest available version -->
 		</dependency>
 
 		<!--

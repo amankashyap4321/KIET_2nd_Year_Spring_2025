@@ -26,6 +26,6 @@ public class StudentController {
 	
 	@RequestMapping("/students")
 	public List<Student> getAllStudent() {
-		return 
+		return service.getAll();
 	}
 }
