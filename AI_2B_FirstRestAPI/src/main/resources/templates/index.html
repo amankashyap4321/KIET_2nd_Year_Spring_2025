@@ -10,5 +10,12 @@
    Student Name : <h1 th:text="${student.name}">Name</h1>
    Student course : <h2 th:text="${student.course}">Course</h2>
    Student contact : <h2 th:text="${student.contact}">Contact</h2>
+
+   <div th:object="${student}">
+    <h1>Student Information as follows</h1>
+   Student Name : <h1 th:text="*{name}">Name</h1>
+   Student course : <h2 th:text="*{course}">Course</h2>
+   Student contact : <h2 th:text="*{contact}">Contact</h2>
+   </div>
 </body>
 </html>
