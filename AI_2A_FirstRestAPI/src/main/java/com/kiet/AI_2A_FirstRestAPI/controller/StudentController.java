@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.kiet.AI_2A_FirstRestAPI.model.Student;
 import com.kiet.AI_2A_FirstRestAPI.service.StudentService;
 
-@RestController
+//@RestController
 public class StudentController {
 
 	private StudentService service;
